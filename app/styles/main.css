@@ -38,6 +38,10 @@ video {
     text-align: center;
 }
 
+#stop-btn { display: none; }
+.streaming #stop-btn { display: inline; }
+.streaming #start-btn { display: none; }
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;

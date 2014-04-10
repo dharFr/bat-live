@@ -25,13 +25,15 @@
         <![endif]-->
 
 
-        <div class="hero-unit">
+        <div class="hero-unit" id="container">
           <h1>Bat-Signal</h1>
           <div class="video-container">
-              <video id='sender-video'></video>
+              <video id='sender-video' autoplay></video>
+              <video id='receiver-video' autoplay></video>
           </div>
           <div class="controls-container">
-              <button id='preview-btn'>Preview</button>
+              <button id='start-btn' disabled>Go Live</button>
+              <button id='stop-btn' disabled>Stop Live</button>
           </div>
         </div>
 
@@ -39,11 +41,22 @@
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/socket.io-client/dist/socket.io.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/webrtc.io.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
+        <script>
+            // rtc.createStream({"video": true, "audio":true}, function(stream){
+            //   // get local stream for manipulation
+            //   console.log(stream);
+            //   document.querySelector('#sender-video').src = window.URL.createObjectURL(stream);
+            // });
+            // rtc.connect('ws://batman.dev.dailymotion.com:8001');
+            // //then a bunch of callbacks are available
+        </script>
 </body>
 </html>
