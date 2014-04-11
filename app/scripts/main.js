@@ -11,7 +11,7 @@
 
     // var senderVideo = document.getElementById('sender-video');
     var previewBtn = document.getElementById('preview-btn');
-    // previewBtn.addEventListener('click', goLive, false);
+    previewBtn.addEventListener('click', goLive, false);
 
     function goLive()
     {
@@ -62,5 +62,4 @@
         });
     }
 
-    goLive();
 })();
