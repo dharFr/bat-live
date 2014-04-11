@@ -1,6 +1,6 @@
 <report>
   <scripts>
-    <script name="C:\Users\f.mailliet\flo\gitprojects\bat-live\app\flash\src\com\endseven\RTMPStream.as" mod="1397134602373" size="1475" optimizedsize="1035">
+    <script name="/Users/o.audard/Development/hackathon-2014/app/flash/src/com/endseven/RTMPStream.as" mod="1397205231000" size="1473" optimizedsize="1035">
       <def id="com.endseven:RTMPStream" />
       <pre id="flash.display:MovieClip" />
       <dep id="AS3" />
@@ -9,7 +9,17 @@
       <dep id="flash.media:Video" />
       <dep id="flash.net:NetConnection" />
     </script>
-    <script name="C:\Users\f.mailliet\flo\gitprojects\bat-live\app\flash\src\com\endseven\Upstream.as" mod="1397146499706" size="2316" optimizedsize="1774">
+    <script name="/Users/o.audard/Development/hackathon-2014/app/flash/src/Batlive.as" mod="1397205231000" size="1382" optimizedsize="979">
+      <def id="Batlive" />
+      <pre id="flash.display:Sprite" />
+      <dep id="flash.display:StageScaleMode" />
+      <dep id="flash.events:Event" />
+      <dep id="AS3" />
+      <dep id="flash.display:LoaderInfo" />
+      <dep id="com.endseven:Upstream" />
+      <dep id="flash.display:StageAlign" />
+    </script>
+    <script name="/Users/o.audard/Development/hackathon-2014/app/flash/src/com/endseven/Upstream.as" mod="1397205231000" size="2314" optimizedsize="1774">
       <def id="com.endseven:Upstream" />
       <pre id="com.endseven:RTMPStream" />
       <dep id="flash.media:Microphone" />
@@ -21,16 +31,6 @@
       <dep id="flash.media:Video" />
       <dep id="flash.net:NetConnection" />
       <dep id="flash.events:NetStatusEvent" />
-    </script>
-    <script name="C:\Users\f.mailliet\flo\gitprojects\bat-live\app\flash\src\Batlive.as" mod="1397150144971" size="1384" optimizedsize="979">
-      <def id="Batlive" />
-      <pre id="flash.display:Sprite" />
-      <dep id="flash.display:StageScaleMode" />
-      <dep id="flash.events:Event" />
-      <dep id="AS3" />
-      <dep id="flash.display:LoaderInfo" />
-      <dep id="com.endseven:Upstream" />
-      <dep id="flash.display:StageAlign" />
     </script>
   </scripts>
   <external-defs>

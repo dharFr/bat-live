@@ -33,7 +33,7 @@
                 bgcolor:"#ffffff"
             }
             var attributes = {};
-            swfobject.embedSWF("flash/Batlive.swf", "video-container", "640", "360", "10.0.0", null, flashvars, params, attributes);
+            swfobject.embedSWF("Batlive.swf", "video-container", "640", "360", "10.0.0", null, flashvars, params, attributes);
 
             $(".hero-unit").append('<p>Allow access and watch your live <a href="http://www.dailymotion.com/video/'+streamName.split("?")[0]+'" target="_blank">here</a></p>');
             $( "#preview-btn" ).hide();

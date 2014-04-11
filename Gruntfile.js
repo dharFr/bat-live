@@ -314,6 +314,21 @@ module.exports = function (grunt) {
             }
         },
 
+        shell: {
+            flashdev: {
+                command: [
+                    'cd app/flash',
+                    './dev.sh'
+                ].join('&&')
+            },
+            flashbuild: {
+                command: [
+                    'cd app/flash',
+                    './build.sh'
+                ].join('&&')
+            }
+        },
+
         // Run some tasks in parallel to speed up build process
         concurrent: {
             server: [
@@ -347,6 +362,7 @@ module.exports = function (grunt) {
             'concurrent:server',
             'autoprefixer',
             'connect:livereload',
+            'shell:flashdev',
             'watch'
         ]);
     });
@@ -383,7 +399,8 @@ module.exports = function (grunt) {
         'modernizr',
         'rev',
         'usemin',
-        'htmlmin'
+        'htmlmin',
+        'shell:flashbuild'
     ]);
 
     grunt.registerTask('default', [
