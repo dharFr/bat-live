@@ -16,7 +16,6 @@
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="../bower_components/modernizr/modernizr.js"></script>
-        <script type="text/javascript" src="scripts/swfobject.js"></script>
         <!-- endbuild -->
     </head>
     <body>
@@ -27,6 +26,9 @@
 
         <div class="hero-unit">
           <h1>Bat-Signal</h1>
+          <p><strong>Goal :</strong> Allow users to create live streaming content (one button, right in the browser, no extra software required)</p>
+          <p>see <a href="index.html">HTML demo</a></p>
+          <h2>Flash demo</h2>
           <div class="video-container" id="video-container">
               <video id='sender-video'></video>
           </div>
@@ -41,8 +43,11 @@
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
+        <!-- build:js scripts/swfobject.js -->
+        <script type="text/javascript" src="scripts/swfobject.js"></script>
+        <!-- endbuild -->
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <!-- build:js({app,.tmp}) scripts/mainflash.js -->
         <script src="scripts/mainflash.js"></script>
         <!-- endbuild -->
 </body>
