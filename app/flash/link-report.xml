@@ -1,0 +1,52 @@
+<report>
+  <scripts>
+    <script name="C:\Users\f.mailliet\flo\gitprojects\bat-live\app\flash\src\com\endseven\RTMPStream.as" mod="1397134602373" size="1475" optimizedsize="1035">
+      <def id="com.endseven:RTMPStream" />
+      <pre id="flash.display:MovieClip" />
+      <dep id="AS3" />
+      <dep id="trace" />
+      <dep id="flash.net:NetStream" />
+      <dep id="flash.media:Video" />
+      <dep id="flash.net:NetConnection" />
+    </script>
+    <script name="C:\Users\f.mailliet\flo\gitprojects\bat-live\app\flash\src\com\endseven\Upstream.as" mod="1397146499706" size="2316" optimizedsize="1774">
+      <def id="com.endseven:Upstream" />
+      <pre id="com.endseven:RTMPStream" />
+      <dep id="flash.media:Microphone" />
+      <dep id="flash.events:Event" />
+      <dep id="flash.media:Camera" />
+      <dep id="AS3" />
+      <dep id="trace" />
+      <dep id="flash.net:NetStream" />
+      <dep id="flash.media:Video" />
+      <dep id="flash.net:NetConnection" />
+      <dep id="flash.events:NetStatusEvent" />
+    </script>
+    <script name="C:\Users\f.mailliet\flo\gitprojects\bat-live\app\flash\src\Batlive.as" mod="1397150144971" size="1384" optimizedsize="979">
+      <def id="Batlive" />
+      <pre id="flash.display:Sprite" />
+      <dep id="flash.display:StageScaleMode" />
+      <dep id="flash.events:Event" />
+      <dep id="AS3" />
+      <dep id="flash.display:LoaderInfo" />
+      <dep id="com.endseven:Upstream" />
+      <dep id="flash.display:StageAlign" />
+    </script>
+  </scripts>
+  <external-defs>
+    <ext id="flash.display:StageAlign" />
+    <ext id="flash.media:Camera" />
+    <ext id="AS3" />
+    <ext id="flash.media:Video" />
+    <ext id="flash.media:Microphone" />
+    <ext id="flash.net:NetConnection" />
+    <ext id="flash.events:NetStatusEvent" />
+    <ext id="flash.display:StageScaleMode" />
+    <ext id="flash.net:NetStream" />
+    <ext id="flash.events:Event" />
+    <ext id="flash.display:LoaderInfo" />
+    <ext id="trace" />
+    <ext id="flash.display:MovieClip" />
+    <ext id="flash.display:Sprite" />
+  </external-defs>
+</report>
