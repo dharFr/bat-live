@@ -18,7 +18,7 @@
         localStorage.setItem('rId', rId);
     }
 
-    // document.querySelector('a#receiverLink').href += '?rid='+rId;
+    document.querySelector('a#receiverLink').href += '?rid='+rId;
 
     navigator.getMedia = ( navigator.getUserMedia ||
                            navigator.webkitGetUserMedia ||

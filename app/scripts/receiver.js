@@ -4,7 +4,15 @@
     'use strict';
 
     var rId;
-    rId = (localStorage && localStorage.rId) ? localStorage.rId : 'batlive-receiver';
+    if (location && location.search)
+    {
+        rId = location.search.match(/rid=([^&]+)/);
+        rId = (rId && rId[1]) ? rId[1] : null;
+    }
+    if (rId == null)
+    {
+        rId = (localStorage && localStorage.rId) ? localStorage.rId : 'batlive-receiver';
+    }
 
     // var peer = new Peer('someid', {host: 'batman.dev.dailymotion.com', port: 9000, path: '/batlive'});
     console.log('Starting Peer connection with', rId);
