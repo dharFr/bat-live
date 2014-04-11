@@ -31,7 +31,7 @@
           <p>see <a href="flash.html">Flash demo</a></p>
           <h2>HTML demo (not working)</h2>
           <div class="video-container">
-              <video id='sender-video'></video>
+              <video id='sender-video' autoplay></video>
           </div>
           <div class="controls-container">
               <button id='preview-btn'>Preview</button>
@@ -44,6 +44,11 @@
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
+
+        <!-- build:js scripts/vendor.js -->
+        <script src="http://cdn.peerjs.com/0.3/peer.js"></script>
+        <!-- endbuild -->
+
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
