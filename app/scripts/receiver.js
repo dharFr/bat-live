@@ -3,8 +3,12 @@
 {
     'use strict';
 
+    var rId;
+    rId = (localStorage && localStorage.rId) ? localStorage.rId : 'batlive-receiver';
+
     // var peer = new Peer('someid', {host: 'batman.dev.dailymotion.com', port: 9000, path: '/batlive'});
-    var peer = new Peer('batlive-receiver', {key: '8c1pbcrq7lihehfr', debug: 3});
+    console.log('Starting Peer connection with', rId);
+    var peer = new Peer(rId, {key: '8c1pbcrq7lihehfr', debug: 3});
     console.log('peer:', peer);
 
 

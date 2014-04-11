@@ -3,6 +3,23 @@
 {
     'use strict';
 
+
+    var sId, rId;
+    if (localStorage && localStorage.sId && localStorage.rId)
+    {
+        sId = localStorage.sId;
+        rId = localStorage.rId;
+    }
+    else
+    {
+        sId = UUIDjs.create();
+        rId = UUIDjs.create();
+        localStorage.setItem('sId', sId);
+        localStorage.setItem('rId', rId);
+    }
+
+    // document.querySelector('a#receiverLink').href += '?rid='+rId;
+
     navigator.getMedia = ( navigator.getUserMedia ||
                            navigator.webkitGetUserMedia ||
                            navigator.mozGetUserMedia ||
@@ -44,21 +61,16 @@
 
     function startStreaming(localMediaStream) {
 
+        console.log('Starting Peer connection with', sId);
         // var peer = new Peer('someid', {host: 'batman.dev.dailymotion.com', port: 9000, path: '/batlive'});
-        var peer = new Peer('batlive-sender', {key: '8c1pbcrq7lihehfr', debug: 3});
+        var peer = new Peer(sId, {key: '8c1pbcrq7lihehfr', debug: 3});
         console.log('peer:', peer);
 
         peer.on('open', function(id) {
             console.log('My peer ID is: ' + id);
 
             // Call a peer, providing our mediaStream
-            var call = peer.call('batlive-receiver', localMediaStream);
-
-          // var conn = peer.connect('batlive-receiver');
-
-          // conn.on('open', function(conn) {
-          //     peer.call('batlive-receiver', localMediaStream);
-          // });
+            var call = peer.call(rId, localMediaStream);
         });
     }
 
