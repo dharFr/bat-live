@@ -1,4 +1,3 @@
-
 (function()
 {
     'use strict';
@@ -16,7 +15,7 @@
         // has flash
         if (swfobject.hasFlashPlayerVersion("10.0.0"))
         {
-            var serverURL = "rtmp://publish2.dailymotion.com/publish-dm";
+            var serverURL = "rtmp://publish.dailymotion.com/publish-dm";
             var streamName = "x146etc?auth=1712051963_f1ab3f7113491fd52827093a7d3f1a49";
 
             var flashvars =
